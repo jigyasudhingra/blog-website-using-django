@@ -8,10 +8,13 @@ def index(request):
     return render(request, 'index.html', context)
 
 def contact(request):
-    return HttpResponse("Contact Us")
+    return render(request, 'contact.html')
+    
 
 def services(request):
-    return HttpResponse("Services")
+    return render(request, 'services.html')
+    
 
 def about(request):
-    return HttpResponse("About Us")
+    return render(request, 'about.html')
+    
