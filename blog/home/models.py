@@ -8,6 +8,6 @@ class Contact(models.Model):
     desc = models.TextField()
     date = models.DateField()
 
-    def __str__(self):
+    def __str__(self): #It should be within class otherwise, it will show error
         return self.name
 
